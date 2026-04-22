@@ -11,7 +11,7 @@ func main() {
 	defer db.Close()
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "Hello, Limino. CI/CD is working!")
+		fmt.Fprintln(w, "Hello, Limino. CI/CD is working!!")
 	})
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
