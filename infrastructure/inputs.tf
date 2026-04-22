@@ -9,4 +9,4 @@ variable "imageVersion" { default = "v1.0.0" }
 
 // Database - Password is not here
 variable "dbAdminLogin"    { default = "liminoadmin" }
-variable "dbAdminPassword" { default = "" }
+variable "dbAdminPassword" {}
