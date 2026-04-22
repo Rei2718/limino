@@ -10,3 +10,7 @@ variable "imageVersion" { default = "v1.0.0" }
 // Database - Password is not here
 variable "dbAdminLogin"    { default = "liminoadmin" }
 variable "dbAdminPassword" {}
+
+// federation
+variable "servicePrincipalAppId" { default = "7f83fac0-9a27-4cd8-957f-4e56afa649d0" }
+variable "githubRepo"            { default = "Rei2718/limino" }

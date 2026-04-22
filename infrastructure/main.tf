@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 4.0"
     }
+    azuread = {
+      source  = "hashicorp/azuread"
+      version = "~> 2.0"
+    }
   }
   required_version = ">= 1.1.0"
 }
@@ -68,4 +72,11 @@ module "keyVault" {
   objectId              = data.azurerm_client_config.current.object_id
   dbAdminPassword       = var.dbAdminPassword
   appServicePrincipalId = module.appService.principalId
+}
+
+module "federatedCredential" {
+  source                = "./modules/federatedCredential"
+  project               = var.project
+  servicePrincipalAppId = var.servicePrincipalAppId
+  githubRepo            = var.githubRepo
 }

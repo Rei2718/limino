@@ -7,12 +7,16 @@ on:
     paths:
       - 'api/**'
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
-  REGISTRY_NAME:     liminoregistrydev
-  REGISTRY_URL:      liminoregistrydev.azurecr.io
-  IMAGE_NAME:        api
-  RESOURCE_GROUP:    limino-rg-dev
-  APP_SERVICE_NAME:  limino-app-service-dev
+  REGISTRY_NAME:    liminoregistrydev
+  REGISTRY_URL:     liminoregistrydev.azurecr.io
+  IMAGE_NAME:       api
+  RESOURCE_GROUP:   limino-rg-dev
+  APP_SERVICE_NAME: limino-app-service-dev
 
 jobs:
   deploy:
