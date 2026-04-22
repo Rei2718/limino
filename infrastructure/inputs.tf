@@ -12,5 +12,5 @@ variable "dbAdminLogin"    { default = "liminoadmin" }
 variable "dbAdminPassword" {}
 
 // federation
-variable "servicePrincipalAppId" { default = "7f83fac0-9a27-4cd8-957f-4e56afa649d0" }
+variable "servicePrincipalAppId" { default = "98cf13a9-fa7d-46d8-8e54-19bba613efec" }
 variable "githubRepo"            { default = "Rei2718/limino" }
