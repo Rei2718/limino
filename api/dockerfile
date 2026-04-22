@@ -1,0 +1,10 @@
+FROM golang:1.26.2-alpine AS builder
+WORKDIR /api
+COPY . .
+RUN go build -o api .
+
+FROM alpine:latest
+WORKDIR /api
+COPY --from=builder /api/api .
+EXPOSE 8080
+CMD ["./api"]
