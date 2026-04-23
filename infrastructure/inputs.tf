@@ -5,7 +5,7 @@ variable "location"    { default = "japaneast" }
 
 // Container Registry
 variable "imageName"    { default = "api" }
-variable "imageVersion" { default = "v1.0.0" }
+variable "imageVersion" { default = "v1.0.1" }
 
 // Database - Password is not here
 variable "dbAdminLogin"    { default = "liminoadmin" }
